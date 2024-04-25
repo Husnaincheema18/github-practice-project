@@ -1,6 +1,5 @@
 export const listData = [
-    { id: 0, name: "Home" , link:"#home" },
-    {id: 1,name: "About Us", link:"#business"},
-    {id: 2,name: "Feature", link:"#feature"},
-     {id: 3,name: "Solution", link:"#solution" }
+    { id: 0, name: "Home" , link:"/" },
+    {id: 1,name: "About Us", link:"/about"},
+    {id: 2,name: "Product", link:"product"},
 ]

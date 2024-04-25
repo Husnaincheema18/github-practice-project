@@ -4,6 +4,7 @@ import { useState } from "react"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { listData } from "./S_data";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -27,9 +28,9 @@ const Navbar = () => {
             {
                 listData.map((list, index)=>{
                     return   <>
-                    <a href={list.link}><li key={index} onClick={() => setselectList(list.name)} className={`cursor-pointer hover:text-blue-300 ${ selectList=== list.name ? " text-blue-300 font-bold" : ""}`}>
+                    <Link href={list.link}><li key={index} onClick={() => setselectList(list.name)} className={`cursor-pointer hover:text-blue-300 ${ selectList=== list.name ? " text-blue-300 font-bold" : ""}`}>
                                {list.name}
-                              </li></a>
+                              </li></Link>
 
                     
     
@@ -57,9 +58,9 @@ const Navbar = () => {
         {
                 listData.map((list, index)=>{
                     return   <div onClick={toggelMenu}>
-                    <a href={list.link}><li key={index} onClick={() => setselectList(list.name)} className={`cursor-pointer py-5 ${list.name === selectList ? " text-blue-200 font-bold" : ""}`} >
+                    <Link href={list.link}><li key={index} onClick={() => setselectList(list.name)} className={`cursor-pointer py-5 ${list.name === selectList ? " text-blue-200 font-bold" : ""}`} >
                                {list.name}
-                              </li></a>
+                              </li></Link>
 
                     
     
