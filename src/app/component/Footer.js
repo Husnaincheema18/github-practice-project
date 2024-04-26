@@ -1,4 +1,4 @@
-import { style } from "./Style"
+import { styles } from "./Style"
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
     </div>
     <div className="mt-5 lg:mx-5">
         <p className={` font-bold mt-5`}>Usefull Links</p>
-        <div className={`${style.color}`}>
+        <div className={`${styles.color}`}>
         <p>Content</p>
         <p>How it Works</p>
         <p>Create</p>
@@ -21,7 +21,7 @@ const Footer = () => {
     </div>
     <div className="mt-5 lg:mx-5">
     <p className={` font-bold mt-5`}>Community</p>
-    <div className={`${style.color}`}>
+    <div className={`${styles.color}`}>
         <p>Help Center</p>
         <p>Partners</p>
         <p>Suggestions</p>
@@ -31,7 +31,7 @@ const Footer = () => {
     </div>
     <div className="mt-5 lg:mx-5">
     <p className={` font-bold mt-5`}>Partner</p>
-    <div className={`${style.color}`}>
+    <div className={`${styles.color}`}>
         <p>Our Partner</p>
         <p>Become a Partner</p>
         </div>
